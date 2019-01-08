@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>IHW Unit Closure Mock Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <form action="#">
+  <div>
+    <img src="https://www.tceq.texas.gov/++theme++tceq-diazo-theme-updated-JS/static/tceq_logo.png" alt="Colorado" class="smaller-image">
+  </div>
+
+  <header>
+    <h2>IHW Unit Closure Mock Form</h2>
+    <div>This is a report template for WMU Closures</div>
+  </header>
+  <div>
+    <label class="desc" id="title106" for="Field106">
+    	TCEQ Program:
+    </label>
+    <div>
+      <select id="Field106" name="Field106" class="field select medium" tabindex="11"> 
+      <option value="First Choice">Please Select Program</option>
+<option value="First Choice">Corrective Action</option>
+      <option value="Second Choice">Voluntary Cleanup Program</option>
+    </select>
+    </div>
+  </div>
+
+  <div>
+    <label class="desc" id="title1" for="Field1">Company Name:</label>
+    <div>
+      <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+    </div>
+  </div>
+
+  <div>
+    <label class="desc" id="title3" for="Field3">
+      Site Name:
+    </label>
+    <div>
+      <input id="Field3" name="Field3" type="email" spellcheck="false" value="" maxlength="255" tabindex="3">
+    </div>
+  </div>
+
+  <div>
+    <label class="desc" id="title1" for="Field1">Primary Contact:</label>
+    <div>
+      <input id="Field1" name="Field1" type="text" class="field text fn" value="" size="8" tabindex="1">
+    </div>
+  </div>
+
+  <div>
+    <label class="desc" id="title4" for="Field4">
+      Reason for WMU Closure:
+    </label>
+
+    <div>
+      <textarea id="Field4" name="Field4" spellcheck="true" rows="5" cols="40" tabindex="4"></textarea>
+    </div>
+  </div>
+
+  <div>
+    <hr>
+
+    <fieldset>
+
+
+      <legend id="title5" class="desc">
+        Has Release Occured?
+      </legend>
+
+      <div>
+        <input id="radioDefault_5" name="Field5" type="hidden" value="">
+        <div>
+          <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+          <label class="choice" for="Field5_0">Yes</label>
+        </div>
+        <div>
+          <input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
+          <label class="choice" for="Field5_1">No</label>
+        </div>
+        <div>
+          <input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
+          <label class="choice" for="Field5_1">I am not sure</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <div>
+    <fieldset>
+      <legend id="title6" class="desc">
+        Closure Report Checklist
+      </legend>
+      <div>
+        <div>
+          <input id="Field6" name="Field6" type="checkbox" value="First Choice" tabindex="8">
+          <label class="choice" for="Field6">Owner Operator Information</label>
+        </div>
+        <div>
+          <input id="Field6" name="Field6" type="checkbox" value="First Choice" tabindex="8">
+          <label class="choice" for="Field6">Copy of NOR</label>
+        </div>
+        <div>
+          <input id="Field7" name="Field7" type="checkbox" value="Second Choice" tabindex="9">
+          <label class="choice" for="Field7">Location of facility</label>
+        </div>
+        <div>
+          <input id="Field8" name="Field8" type="checkbox" value="Third Choice" tabindex="10">
+          <label class="choice" for="Field8">Description of WMU</label>
+          </span>
+        </div>
+
+        <div>
+          <input id="Field8" name="Field8" type="checkbox" value="Third Choice" tabindex="10">
+          <label class="choice" for="Field8">Reason for WMU closure</label>
+          </span>
+        </div>
+        <div>
+          <input id="Field8" name="Field8" type="checkbox" value="Third Choice" tabindex="10">
+          <label class="choice" for="Field8">Map of facility showing location of WMU</label>
+          </span>
+        </div>
+        <div>
+          <input id="Field8" name="Field8" type="checkbox" value="Third Choice" tabindex="10">
+          <label class="choice" for="Field8">Description of how the WMU was closed</label>
+          </span>
+        </div>
+        <div>
+          <input id="Field8" name="Field8" type="checkbox" value="Third Choice" tabindex="10">
+          <label class="choice" for="Field8">Photographs with descriptions of the WMU before, during, and
+following closure</label>
+          </span>
+        </div>
+        <div>
+          <input id="Field8" name="Field8" type="checkbox" value="Third Choice" tabindex="10">
+          <label class="choice" for="Field8">Description of the WMU and waste dispositions, including copies of
+waste manifest</label>
+          </span>
+        </div>
+    </fieldset>
+    </div>
+
+<div>
+    <legend id="title5" class="desc">
+        Attachments:
+      </legend>
+<div ng-app="fileUpload" class="container">
+  <div class="row" ng-controller="upload">
+    <div class="col-md-6">
+        <input type="file" fileinput="file" filepreview="filepreview"/>
+    </div>
+    <div class="col-md-6">
+       <img ng-src="{{filepreview}}" class="img-responsive" ng-show="filepreview"/>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<hr>
+
+    <div>
+      <div>
+        <input id="saveForm" name="saveForm" type="submit" value="Submit">
+      </div>
+    </div>
+
+</form>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
